@@ -11,6 +11,7 @@ body {
 .bg-style {
   border-bottom: 1px solid #d8d8d8;
 }
+
 .navbar-toggler {
   background-color: var(--primary-color);
   border-radius: 2px;
@@ -27,7 +28,9 @@ body {
 
 .hero-section {
   padding: 100px 10px;
+  background-color: white;
 }
+
 h1,
 h2 {
   font-family: "Heebo", sans-serif;
@@ -64,6 +67,45 @@ h4 {
 
 .img-container {
   padding-left: 0;
+}
+
+/* ABOUT */
+
+.h2-about {
+  padding-bottom: 10px;
+  font-size: 36px;
+}
+
+span.nice {
+  border-bottom: 4px solid var(--primary-color);
+}
+
+.about-section {
+  background-color: #f7f8fc;
+}
+
+.about-container {
+  margin-top: 40px;
+}
+
+.about-col-1,
+.about-col-2 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+p {
+  padding: 5px 0;
+}
+
+.first-paragraph {
+  padding-top: 84px;
+}
+
+.about-me-img {
+  width: 70%;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 @media (max-width: 991px) {
