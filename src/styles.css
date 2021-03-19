@@ -156,6 +156,13 @@ p {
   margin: 0;
 }
 
+/*FOOTER*/
+
+.fab {
+  font-size: 32px;
+  color: #333333;
+}
+
 /** MEDIA QUERIES **/
 
 /*LARGE DEVICES*/
