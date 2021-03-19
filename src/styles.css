@@ -134,6 +134,28 @@ p {
   cursor: d;
 }
 
+/*CONTACT*/
+
+.contact-me {
+  background-color: var(--primary-color);
+}
+
+.contact-btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px 30px;
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+.contact-me h2 {
+  font-weight: 500;
+  padding: 10px;
+  margin: 0;
+}
+
 /** MEDIA QUERIES **/
 
 /*LARGE DEVICES*/
@@ -239,6 +261,24 @@ p {
   .skills-after {
     margin: 0 auto !important;
     border: none !important;
+  }
+
+  /* CONTACT*/
+
+  .contact-small {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px !important;
+  }
+
+  .contact-small h2 {
+    padding-bottom: 20px;
+  }
+
+  .contact-btn {
+    padding: 10px 20px;
+    font-size: 12px;
   }
 }
 
