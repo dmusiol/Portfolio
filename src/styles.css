@@ -24,6 +24,14 @@ body {
   width: 24px;
 }
 
+.nav-link {
+  font-size: 16px;
+}
+
+.logo-img {
+  padding-left: 15px;
+}
+
 /* HERO */
 
 .hero-section {
@@ -78,7 +86,7 @@ h2 {
   padding-bottom: 10px;
 }
 
-span.nice {
+h2 span {
   border-bottom: 4px solid var(--primary-color);
 }
 
@@ -110,6 +118,27 @@ p {
   padding-bottom: 20px;
 }
 
+/* SKILLS */
+h4 {
+  font-weight: 600;
+  color: #000000;
+  font-size: 32px;
+  opacity: 80%;
+}
+
+.title-pgf {
+  font-weight: 500;
+  font-size: 18px;
+  padding: 8px 0;
+}
+
+.skills-active:hover {
+  background-color: var(--primary-color);
+  transition: all ease-in-out 0.5s;
+  border: var(--primary-color);
+  cursor: d;
+}
+
 /*LARGE DEVICES*/
 
 @media (max-width: 991px) {
@@ -139,6 +168,11 @@ p {
     display: flex;
     justify-content: center !important;
     font-size: 14px;
+    text-align: center;
+  }
+
+  .nav-link {
+    font-size: 14px;
   }
 
   /* HERO */
@@ -163,10 +197,11 @@ p {
   /* ABOUT*/
   p {
     text-align: center;
+    font-size: 16px;
   }
   h2 {
     font-size: 26px;
-    margin: 60px 0;
+    margin: 40px 0;
   }
 
   .about-col-1 {
@@ -183,7 +218,7 @@ p {
     padding-top: 0;
   }
   .about-me-img {
-    width: 30%;
+    display: none;
   }
 }
 
@@ -212,10 +247,16 @@ p {
 /*XS DEVICES*/
 
 @media (max-width: 320px) {
-  h2 {
-    margin: 30px auto;
+  .about-col-1 {
+    justify-content: left;
+    padding-bottom: 0;
   }
-  .about-me-img {
-    display: none;
+  h2 {
+    text-align: left;
+  }
+
+  p {
+    text-align: left;
+    font-size: 14px;
   }
 }
