@@ -51,7 +51,7 @@ h1 {
   padding: 10px 0;
 }
 
-h3 {
+h3.hello {
   line-height: 50px;
   font-size: 28px;
   padding: 10px 0 0 0;
@@ -82,6 +82,7 @@ h4 {
 h2 {
   font-size: 36px;
 }
+
 .h2-about {
   padding-bottom: 10px;
 }
@@ -119,12 +120,6 @@ p {
 }
 
 /* SKILLS */
-h4 {
-  font-weight: 600;
-  color: #000000;
-  font-size: 32px;
-  opacity: 80%;
-}
 
 .title-pgf {
   font-weight: 500;
@@ -132,12 +127,14 @@ h4 {
   padding: 8px 0;
 }
 
-.skills-active:hover {
+.skills-after:hover {
   background-color: var(--primary-color);
   transition: all ease-in-out 0.5s;
   border: var(--primary-color);
   cursor: d;
 }
+
+/** MEDIA QUERIES **/
 
 /*LARGE DEVICES*/
 
@@ -159,11 +156,19 @@ h4 {
     font-size: 18px;
     line-height: 30px;
   }
+
+  .skills-after {
+    margin: 20px auto !important;
+  }
 }
 
 /*MEDIUM DEVICES*/
 
 @media (max-width: 767px) {
+  h2 {
+    font-size: 26px;
+  }
+
   .small-flex {
     display: flex;
     justify-content: center !important;
@@ -176,7 +181,7 @@ h4 {
   }
 
   /* HERO */
-  h3 {
+  h3.hello {
     border: none;
   }
 
@@ -195,13 +200,17 @@ h4 {
   }
 
   /* ABOUT*/
+
   p {
-    text-align: center;
     font-size: 16px;
   }
-  h2 {
-    font-size: 26px;
-    margin: 40px 0;
+  .h2-about {
+    padding: 20px;
+  }
+
+  .h2-skills {
+    padding: 30px !important;
+    text-align: center;
   }
 
   .about-col-1 {
@@ -219,6 +228,17 @@ h4 {
   }
   .about-me-img {
     display: none;
+  }
+
+  /*SKILLS*/
+
+  .sk-small-b {
+    border-top: 1px solid #dee2e6;
+  }
+
+  .skills-after {
+    margin: 0 auto !important;
+    border: none !important;
   }
 }
 
