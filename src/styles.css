@@ -65,10 +65,6 @@ h4 {
   font-size: 26px;
 }
 
-.hero-headings {
-  padding-right: 0;
-}
-
 .hero-img {
   border: 3px solid black;
 }
@@ -127,11 +123,13 @@ p {
   padding: 8px 0;
 }
 
-.skills-after:hover {
-  background-color: var(--primary-color);
-  transition: all ease-in-out 0.5s;
-  border: var(--primary-color);
-  cursor: d;
+@media (hover: hover) {
+  .skills-after:hover {
+    background-color: var(--primary-color);
+    transition: all ease-in-out 0.5s;
+    border: var(--primary-color);
+    cursor: d;
+  }
 }
 
 /*CONTACT*/
@@ -212,6 +210,8 @@ p {
   /* HERO */
   h3.hello {
     border: none;
+    font-size: 22px;
+    padding: 0;
   }
 
   .hero-section {
@@ -297,9 +297,8 @@ p {
     line-height: 45px;
   }
 
-  h2,
-  h3 {
-    font-size: 20px;
+  h2 {
+    font-size: 18px;
   }
 
   h4 {
@@ -314,14 +313,6 @@ p {
 /*XS DEVICES*/
 
 @media (max-width: 320px) {
-  .about-col-1 {
-    justify-content: left;
-    padding-bottom: 0;
-  }
-  h2 {
-    text-align: left;
-  }
-
   p {
     text-align: left;
     font-size: 14px;
