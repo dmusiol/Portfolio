@@ -10,6 +10,7 @@ body {
 
 .bg-style {
   border-bottom: 1px solid #d8d8d8;
+  background-color: white;
 }
 
 .navbar-toggler {
@@ -36,7 +37,7 @@ body {
 /* HERO */
 
 .hero-section {
-  padding: 100px 10px;
+  padding: 150px 10px 80px 10px;
   background-color: white;
 }
 
@@ -304,7 +305,7 @@ span.i-text {
   }
 
   .hero-section {
-    padding: 70px 10px;
+    padding: 100px 10px 60px 10px;
   }
   .hero-headings {
     text-align: center;
@@ -445,7 +446,7 @@ span.i-text {
   }
 
   .hero-section {
-    padding: 40px 10px;
+    padding: 100px 10px 40px 10px;
   }
 }
 
@@ -455,5 +456,9 @@ span.i-text {
   p {
     text-align: left;
     font-size: 14px;
+  }
+
+  .footer-logo {
+    display: none;
   }
 }
