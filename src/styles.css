@@ -9,8 +9,9 @@ body {
 /* NAVBAR */
 
 .bg-style {
-  border-bottom: 1px solid #d8d8d8;
+  border-bottom: 1px solid #c7c7c7;
   background-color: white;
+  opacity: 96%;
 }
 
 .navbar-toggler {
@@ -27,7 +28,6 @@ body {
 
 .nav-link {
   font-size: 16px;
-  color: #333333;
 }
 
 .logo-img {
@@ -318,15 +318,6 @@ span.i-text {
   }
 
   /*PROJECTS*/
-  div.projects-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .project-img {
-    width: 40%;
-  }
 
   .img-button {
     padding: 10px 20px;
@@ -337,7 +328,6 @@ span.i-text {
     max-width: 24px;
   }
 }
-
 /*MEDIUM DEVICES*/
 
 @media (max-width: 767px) {
