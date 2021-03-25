@@ -289,6 +289,10 @@ span.i-text {
   color: #333333;
   opacity: 100%;
 }
+.all-rights {
+  font-size: 12px;
+  padding: 0;
+}
 
 /** MEDIA QUERIES **/
 
