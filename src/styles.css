@@ -145,7 +145,7 @@ p {
   opacity: 60%;
 }
 
-/* PROJECTS*/
+/* PROJECTS LARGE*/
 
 .projects-row img {
   border: 1px rgb(184, 184, 184) solid;
@@ -201,6 +201,39 @@ p {
 
 .img-button:hover {
   color: white;
+}
+
+/*PROJECTS SMALL*/
+
+.bg-card {
+  background-color: #f7f8fc;
+}
+
+.border-light {
+  border: none;
+}
+
+.btn-small {
+  background-color: var(--primary-color);
+  padding: 10px 16px;
+  color: black;
+  text-decoration: none;
+  border-radius: 2px;
+}
+.btn-small-right {
+  padding: 10px 16px;
+  color: white;
+  text-decoration: none;
+  background-color: #333333;
+  border-radius: 2px;
+}
+
+.btn-small:hover {
+  color: black;
+}
+
+.project-link {
+  color: black;
 }
 
 /*CONTACT*/
