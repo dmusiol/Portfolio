@@ -175,6 +175,11 @@ p {
   text-align: center;
 }
 
+.project-title {
+  font-size: 18px;
+  padding: 20px 0;
+}
+
 .project-img:hover img {
   filter: grayscale(100%);
   opacity: 0.2;
@@ -395,18 +400,7 @@ span.i-text {
   }
 
   div.projects-row {
-    display: block;
-    margin-bottom: 30px;
-  }
-
-  .project-img {
-    margin: 0 auto;
-    width: 80%;
-  }
-
-  .img-button {
-    padding: 10px 20px;
-    font-size: 12px;
+    display: none;
   }
 
   /* CONTACT*/
