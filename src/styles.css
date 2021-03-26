@@ -296,6 +296,14 @@ span.i-text {
   padding: 0;
 }
 
+.open-source {
+  color: black;
+}
+
+.open-source:visited {
+  color: #6f0ac2;
+}
+
 /** MEDIA QUERIES **/
 
 /*LARGE DEVICES*/
