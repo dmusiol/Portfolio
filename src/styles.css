@@ -1,5 +1,7 @@
 :root {
   --primary-color: #fece47;
+  --secondary-bg-color: #f7f8fc;
+  --btn-color: #333333;
 }
 
 body {
@@ -8,7 +10,7 @@ body {
 
 /* NAVBAR */
 
-.bg-style {
+.nav-bg-style {
   border-bottom: 1px solid #c7c7c7;
   background-color: white;
   opacity: 96%;
@@ -36,11 +38,6 @@ body {
 
 /* HERO */
 
-.hero-section {
-  padding: 150px 10px 80px 10px;
-  background-color: white;
-}
-
 h1,
 h2 {
   font-family: "Heebo", sans-serif;
@@ -65,6 +62,11 @@ h4 {
   line-height: 50px;
   font-weight: 300;
   font-size: 26px;
+}
+
+.hero-section {
+  padding: 150px 10px 80px 10px;
+  background-color: white;
 }
 
 .hero-img {
@@ -94,7 +96,7 @@ p {
 }
 
 .about-section {
-  background-color: #f7f8fc;
+  background-color: var(--secondary-bg-color);
 }
 
 .about-container {
@@ -103,7 +105,7 @@ p {
 }
 
 .first-paragraph {
-  padding-top: 84px;
+  padding-top: 40px;
 }
 
 .about-me-img {
@@ -120,7 +122,7 @@ p {
   margin-bottom: 60px;
 }
 
-.title-pgf {
+.title-skill-pgf {
   font-weight: 500;
   font-size: 18px;
   padding: 8px 0;
@@ -131,12 +133,12 @@ p {
   justify-content: center;
 }
 
-.s-1,
-.s-2 {
+.skill-1,
+.skill-2 {
   width: 45%;
 }
 
-.s-1 {
+.skill-1 {
   background-color: var(--primary-color);
   border: var(--primary-color);
 }
@@ -191,7 +193,7 @@ p {
 }
 
 .img-button {
-  background-color: #212629;
+  background-color: var(--btn-color);
   color: white;
   font-size: 14px;
   padding: 14px 30px;
@@ -210,8 +212,8 @@ p {
   font-size: 16px;
 }
 
-.bg-card {
-  background-color: #f7f8fc;
+.card-bg {
+  background-color: var(--secondary-bg-color);
 }
 
 .border-light {
@@ -230,7 +232,7 @@ p {
   padding: 10px 16px;
   color: white;
   text-decoration: none;
-  background-color: #333333;
+  background-color: var(--btn-color);
   border-radius: 2px;
   font-size: 14px;
 }
@@ -239,8 +241,8 @@ p {
   color: black;
 }
 
-.project-link {
-  color: black;
+.btn-small-right:hover {
+  color: white;
 }
 
 /*CONTACT*/
@@ -250,23 +252,22 @@ p {
   padding: 10px;
 }
 
-.contact-btn {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 14px 30px;
-  background-color: #333333;
-  color: white;
-  text-align: center;
-  font-size: 14px;
-  border-radius: 2px;
-}
-
 .contact-me h2 {
   font-weight: 500;
   padding: 10px;
   margin: 0;
 }
 
+.contact-btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px 30px;
+  background-color: var(--btn-color);
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 2px;
+}
 .contact-btn:hover {
   color: white;
 }
@@ -282,12 +283,12 @@ span.i-text {
 
 .fab {
   font-size: 26px;
-  color: #333333;
+  color: var(--btn-color);
   opacity: 80%;
 }
 
 .fab:hover {
-  color: #333333;
+  color: var(--btn-color);
   opacity: 100%;
 }
 .all-rights {
@@ -318,7 +319,7 @@ span.i-text {
   }
 
   h4 {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 30px;
   }
 
@@ -333,15 +334,17 @@ span.i-text {
     max-width: 24px;
     max-height: 24px;
   }
+  .project-title {
+    font-size: 14px;
+    padding: 10px 0;
+  }
 }
 /*MEDIUM DEVICES*/
 
 @media (max-width: 767px) {
-  h2 {
-    font-size: 26px;
-  }
+  /*NAVBAR*/
 
-  .small-flex {
+  .small-nav-flex {
     display: flex;
     justify-content: center !important;
     font-size: 14px;
@@ -353,6 +356,7 @@ span.i-text {
   }
 
   /* HERO */
+
   h3.hello {
     border: none;
     font-size: 22px;
@@ -379,7 +383,7 @@ span.i-text {
     font-size: 16px;
   }
   .h2-about {
-    padding: 20px 0;
+    padding: 30px 0;
     text-align: center;
   }
 
@@ -418,12 +422,11 @@ span.i-text {
   .skills-row {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 
-  .s-1,
-  .s-2 {
+  .skill-1,
+  .skill-2 {
     width: 100%;
     margin-bottom: 20px;
   }
@@ -431,7 +434,7 @@ span.i-text {
   /*PROJECTS*/
 
   .h2-projects {
-    padding-bottom: 30px !important;
+    padding: 30px !important;
     text-align: center;
   }
 
@@ -457,13 +460,6 @@ span.i-text {
     font-size: 12px;
   }
 
-  /*PROJECTS*/
-
-  .img-button {
-    padding: 10px 20px;
-    font-size: 12px;
-  }
-
   /*FOOTER*/
 
   span.i-text {
@@ -475,13 +471,13 @@ span.i-text {
     padding: 10px;
   }
 
-  .text-and-logo p {
+  .footer-pgf-layout p {
     font-size: 12px;
     opacity: 80%;
   }
 
   .footer-logo {
-    height: 18;
+    height: 18px;
     margin-top: 4px;
   }
 }
@@ -511,7 +507,7 @@ span.i-text {
     font-size: 26px;
   }
 
-  .text-and-logo {
+  .footer-pgf-layout {
     padding: 0;
   }
 }
