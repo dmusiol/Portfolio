@@ -147,6 +147,12 @@ p {
   opacity: 60%;
 }
 
+/* CAROUSEL */
+
+.carousel {
+  max-width: 500px;
+}
+
 /* PROJECTS LARGE*/
 
 .projects-row img {
