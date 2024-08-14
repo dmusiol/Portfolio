@@ -185,7 +185,7 @@ p {
 
 .project-img:hover img {
   filter: grayscale(100%);
-  opacity: 0.2;
+  opacity: 0.1;
   border: 1px solid black;
 }
 
